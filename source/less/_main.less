@@ -6,7 +6,7 @@
         position: relative;
         margin: 0px auto;
         columns: 400px;
-        column-gap: 0;
+        column-gap: 20px;
         margin: -@gap /2;
         @media(max-width: @on-phone) {
             margin: 0;
@@ -24,6 +24,7 @@
         // for firefox
         column-break-inside: avoid;
         break-inside: avoid-column;
+        margin-bottom: @gap;
     }
     .mobile-post() {
         .post {
